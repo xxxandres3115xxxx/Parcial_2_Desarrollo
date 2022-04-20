@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="../CSS/StyleTest.css">
+</head>
+<body>
+
+    <div class="contContador">
+        <p id="textProgreso">PROGRESO:</p>
+        <div id="barraProgreso">
+            <div id="rellenoBarraProgreso"></div>
+        </div>
+        <p id="textBuenas">BUENAS:</p>
+        <p id="resBuenas"></p>
+        <p id="textMalas">MALAS:</p>
+        <p id="resMalas"></p>
+        <p id="textTemporizador">TIEMPO:</p>
+        <p id="temporizador">0:00</p>
+    </div>
+
+    <section>
+        <div class="contPregunta">
+            <div class="divPreg">
+                <p id="pregunta">Esta es una pregunta de ejemplo solo para ver como configurar el estilo sdas aksakd asdas as dasda dasd?</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="contRespuestas">
+            <div class="divRespuestas">
+
+                <button type="button" id="res1" class="botonRespuestas" onclick="botonOprimido(0)"></button>
+                <button type="button" id="res2" class="botonRespuestas" onclick="botonOprimido(1)"></button>
+                <button type="button" id="res3" class="botonRespuestas" onclick="botonOprimido(2)"></button>
+                <button type="button" id="res4" class="botonRespuestas" onclick="botonOprimido(3)"></button>
+              
+            </div>
+        </div>
+    </section>
+
+    <!-- PARA LA VENTANA EMERGENTE -->
+    <div class="overlay" id="overlay">
+
+        <div class="popup" id="popup">
+
+            <!-- <h3>RESPUESTA</h3> -->
+            <h1 id="retroalimentacion"></h1>
+            <button type="button" class="btn-submit" onclick="preguntar()" id="botonContinuar">Continuar</button>
+           
+        </div>
+
+    </div>
+
+
+    <!-- PARA INGRESAR NOMBRE -->
+    <div class="overlay" id="overlay2">
+
+        <div class="popup" id="popup2">
+
+            <h2>Ingresa tu nombre para registrar tu Score!</h2>
+            <form>
+                <input type="text" name="nombre" id="nombreInput" required>
+                <br><br>
+                <button type="button" class="btn-submit" id="botonContinuar2" onclick="acabarTest()">Continuar</button>
+                <!-- <input type="submit" class="btn-submit" id="botonContinuar2" value="Continuar"> -->
+            </form>
+            
+
+            <!-- <h4 id="retroalimentacion"></h4> -->
+            
+        </div>
+
+    </div>
+    <hr>
+    <section>
+        <h1 id="tituloRecord">RECORDS</h1>
+        <div class="contScore" id="contenedorScore">
+            <div class="scoreTitulo">
+                <p>Posición</p>
+                <p>NOMBRE</p>
+                <p>SCORE</p>
+                <p>TIEMPO</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="../JS/IndexTest.js"></script>
+</body>
+</html>
